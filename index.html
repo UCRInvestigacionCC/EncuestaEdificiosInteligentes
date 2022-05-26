@@ -1,0 +1,19 @@
+<script>
+  function randomRedirect() {
+  let links = ["https://encuestas.citic.ucr.ac.cr/index.php/915178?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/516923?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/223577?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/644451?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/285926?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/835588?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/691263?newtest=Y&lang=es-MX",
+  "https://encuestas.citic.ucr.ac.cr/index.php/724583?newtest=Y&lang=es-MX"]
+  let number = Math.floor(Math.random() * links.length)
+  window.location.replace(links[number])
+};
+  
+  window.onload = function() {
+  randomRedirect()
+};
+
+</script>
